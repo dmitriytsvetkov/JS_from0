@@ -305,7 +305,7 @@ alert( arrLength ); // 4,5,2,5*/
 // getSums( arr ) = [ 1, 1+2, 1+2+3, 1+2+3+4, 1+2+3+4+5 ] = [ 1, 3, 6, 10, 15 ]
 
 
-function getSums(arr) {
+/*function getSums(arr) {
   var result = [];
   if (!arr.length) return result;
 
@@ -317,4 +317,107 @@ function getSums(arr) {
   return result;
 }
 
-alert(getSums([1,2,3,4,5])); // результат: 1,3,6,10
+alert(getSums([1,2,3,4,5])); // результат: 1,3,6,10*/
+
+/*function log(a, b, c) {
+  alert("1, 2")
+}
+
+function log(a) {
+  alert("1")
+}
+
+
+
+log(); // вызовется первая функция
+log(); // вызовется вторая функция*/
+
+
+
+// Как в функции отличить отсутствующий аргумент от undefined?
+// f(undefined); // 1
+// f(); // 0
+// function f(x) {
+  // ..ваш код..
+  // выведите 1, если первый аргумент есть, и 0 - если нет
+//}
+
+/*function f(x) {
+    "use strict"
+    
+    arguments.length ? alert(1) : alert(0); 
+}
+
+f(undefined);*/
+
+
+
+// Напишите функцию sum(...), которая возвращает сумму всех своих аргументов:
+// sum() = 0
+// sum(1) = 1
+// sum(1, 2) = 3
+
+/*function sum() {
+    var res = 0;
+    for (var i = 0; i < arguments.length; i++) {
+        res += arguments[i];
+    }
+    return res;
+}
+alert( sum(3, 2, 3) );*/
+
+
+
+// Создайте объект Date для даты: 20 февраля 2012 года, 3 часа 12 минут.
+// Временная зона – местная. Выведите его на экран.
+
+/*var date = new Date(2012, 1, 20, 3, 12);
+alert(date);*/
+
+
+
+// Создайте функцию getWeekDay(date), которая выводит текущий день недели в коротком формате „пн“, „вт“, … „вс“.
+// var date = new Date(2012,0,3);  // 3 января 2012
+// alert( getWeekDay(date) );      // Должно вывести 'вт'
+
+function getWeekDay(date) {
+    
+    switch( date.getDay() ) {
+        case 0: 
+        alert("Воскресенье");
+        break;
+
+        case 1: 
+        alert("Понедельник");
+        break;
+
+        case 2: 
+        alert("Вторник");
+        break;
+
+        case 3: 
+        alert("Среда");
+        break;
+
+        case 4: 
+        alert("Четверг");
+        break;
+
+        case 5: 
+        alert("Пятница");
+        break;
+
+        case 6: 
+        alert("Суббота");
+        break;
+      
+        default:
+        alert("Бред")    
+        break;
+    }
+    
+}
+
+var today = new Date(2016,10,26);
+
+getWeekDay(today);

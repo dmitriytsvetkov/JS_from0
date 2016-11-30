@@ -75,7 +75,7 @@ function isNumeric(n) {
 // find(arr, 1.5); // 2
 // find(arr, 0); // -1
 
-var arr = ["a", -1, 2, "b"];
+/*var arr = ["a", -1, 2, "b"];
 
 var index = find(arr, 2);
 
@@ -87,7 +87,7 @@ function find(arr, value) {
             return i;
         } else return -1;
     }
-}
+}*/
 
 
 

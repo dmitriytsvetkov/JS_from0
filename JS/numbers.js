@@ -14,7 +14,8 @@ alert( +result.toFixed(10) );*/
 // Напишите функцию getDecimal(num), которая возвращает десятичную часть числа:
 // alert( getDecimal(12.345) ); // 0.345
 
-/*function getDecimal(num) {
+/*
+function getDecimal(num) {
     var result = +0;
   if(num > 0) {
     result = num % 1;
@@ -23,7 +24,8 @@ alert( +result.toFixed(10) );*/
   result = Math.round(result * 10) / 10;
   return result;
 }
-alert( getDecimal(-1.1212112) );*/
+alert( getDecimal(-1.1212112) );
+*/
 
 
 // #3
@@ -34,7 +36,8 @@ function getRandom(min, max) {
     return Math.random() * (max - min - 1) + min;
 }
 
-alert( getRandom(0, 10) );*/
+alert( getRandom(0, 10) );
+*/
 
 
 

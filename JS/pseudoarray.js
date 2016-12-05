@@ -13,7 +13,8 @@
 // f(undefined); // 1
 // f(); // 0
 
-/*f(undefined);
+/*
+f(undefined);
 f(); // 0
 
 function f(x) {
@@ -22,7 +23,8 @@ function f(x) {
     } else {
         alert(1);
     }
-}*/
+}
+*/
 
 
 // #2
@@ -35,7 +37,8 @@ function f(x) {
 // sum(1, 2, 3) = 6
 // sum(1, 2, 3, 4) = 10
 
-/*sum(1, 2, 3);
+/*
+sum(1, 2, 3);
 sum(1, 2, 3, 4);
 
 function sum() {
@@ -43,7 +46,8 @@ function sum() {
     for (var i = 0; i < arguments.length; i++) {
         result += arguments[i];
     } return alert(result);
-}*/
+}
+*/
 
 
 

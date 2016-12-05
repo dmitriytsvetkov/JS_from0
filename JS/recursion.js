@@ -7,13 +7,15 @@
 // ...
 // sumTo(100) = 100 + 99 + ... + 2 + 1 = 5050
 
-/*function sumTo(num) {
+/*
+function sumTo(num) {
 	var result = num;
     if (num != 1) {
         result = result + ( sumTo(num - 1) );
 	}	return result;
 }
-alert( sumTo(3) );*/
+alert( sumTo(3) );
+*/
 
 
 // #2
@@ -25,13 +27,15 @@ alert( sumTo(3) );*/
 // 4! = 4 * 3 * 2 * 1 = 24
 // 5! = 5 * 4 * 3 * 2 * 1 = 120
 
-/*function factorial(num) {
+/*
+function factorial(num) {
     var result = num;
     if (num != 1) {
         result = result * ( factorial(num - 1) );
     }	return result;
 }
-alert( factorial(4) );*/
+alert( factorial(4) );
+*/
 
 // #3
 // Числа Фибоначчи
@@ -43,7 +47,8 @@ alert( factorial(4) );*/
 // alert( fib(7) ); // 13
 // alert( fib(77)); // 5527939700884757
 
-/*function fib(n) {
+/*
+function fib(n) {
  var a = 1,
  b = 0,
  x;
@@ -54,7 +59,8 @@ alert( factorial(4) );*/
  }
  return b;
 }
-alert( fib(4) );*/
+alert( fib(4) );
+*/
 
 
 

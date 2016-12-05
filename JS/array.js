@@ -4,9 +4,11 @@
 // У нас есть массив goods. Сколько в нем элементов – не знаем, но можем прочитать из goods.length.
 // Напишите код для получения последнего элемента goods.
 
-/*var goods = [1, 2, 3, 4, 2, 6];
+/*
+var goods = [1, 2, 3, 4, 2, 6];
 
-var lastItem = goods[(goods.length -1)];*/
+var lastItem = goods[(goods.length -1)];
+*/
 
 
 // #2
@@ -14,9 +16,11 @@ var lastItem = goods[(goods.length -1)];*/
 // Как добавить элемент в конец произвольного массива?
 // У нас есть массив goods. Напишите код для добавления в его конец значения «Компьютер».
 
-/*var goods = [];
+/*
+var goods = [];
 goods.push ("Компьютер");
-alert(goods);*/
+alert(goods);
+*/
 
 
 // #3
@@ -26,11 +30,13 @@ alert(goods);*/
 // P.S. Код для генерации случайного целого от min to max включительно:
 // var rand = min + Math.floor(Math.random() * (max + 1 - min));
 
-/*var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+/*
+var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
 
 var rand = Math.floor(Math.random() * ( (arr.length - 1) + 1) );
 
-alert( arr[rand] );*/
+alert( arr[rand] );
+*/
 
 
 // #4
@@ -41,7 +47,8 @@ alert( arr[rand] );*/
 // При этом ноль 0 не должен заканчивать ввод, это разрешённое число.
 // Выводит сумму всех значений массива
 
-/*var arr = [];
+/*
+var arr = [];
 
 while (true) {
     var x = prompt("Введите очередной элемент массива:", "" );
@@ -60,7 +67,8 @@ alert(sum);
 
 function isNumeric(n) {
     return !isNaN(parseFloat(n)) && isFinite(n);
-}*/
+}
+*/
 
 
 // #5
@@ -75,7 +83,8 @@ function isNumeric(n) {
 // find(arr, 1.5); // 2
 // find(arr, 0); // -1
 
-/*var arr = ["a", -1, 2, "b"];
+/*
+var arr = ["a", -1, 2, "b"];
 
 var index = find(arr, 2);
 
@@ -87,7 +96,8 @@ function find(arr, value) {
             return i;
         } else return -1;
     }
-}*/
+}
+*/
 
 
 

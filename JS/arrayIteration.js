@@ -18,8 +18,8 @@ var arrLength = arr.map(function (name) {
     return name.length;
 });
 
-alert( arrLength );*/
-
+alert( arrLength );
+*/
 
 
 // #2
@@ -38,9 +38,8 @@ alert( arrLength );*/
 // Функция не должна модифицировать входной массив.
 // В решении используйте метод arr.reduce.
 
-
-
-/*var numbersClone = numbers.slice();
+/*
+var numbersClone = numbers.slice();
 var previousValue = 0;
 var currentValue = 0;
 
@@ -51,7 +50,9 @@ for (var i = 0; i < numbersClone.length; i++) { // алгоритм заполн
     numbersClone[i] = previousValue + currentValue;
 }
 
-alert(numbersClone);*/
+alert(numbersClone);
+*/
+
 
 /*function getSums(arr) {
     var result = [];

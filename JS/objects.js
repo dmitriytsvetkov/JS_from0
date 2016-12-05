@@ -10,7 +10,8 @@
 // schedule["8:30"] = "подъём";
 // alert( isEmpty(schedule) ); // false
 
-/*var schedule = {};
+/*
+var schedule = {};
 schedule["1"] = ["undefined"];
 
 alert( isEmpty(schedule) );
@@ -22,7 +23,8 @@ function isEmpty(obj) {
     if (prop !== undefined) {
         return false;
     } else return true;
-}*/
+}
+*/
 
 // #2
 // Есть объект salaries с зарплатами. Напишите код, который выведет сумму всех зарплат.
@@ -35,7 +37,8 @@ function isEmpty(obj) {
 
 //... ваш код выведет 650
 
-/*var salaries = {
+/*
+var salaries = {
     "Вася" : 100,
     "Петя" : 300,
     "Даша" : 250
@@ -46,7 +49,8 @@ function salariesSum(obj) {
     for (var key in obj) {
 
     }
-}*/
+}
+*/
 
 
 // #3
@@ -63,7 +67,8 @@ function salariesSum(obj) {
 
 // ... ваш код выведет "Петя"
 
-/*var salaries = {
+/*
+var salaries = {
     "Вася": 100,
     "Петя": 200,
     "Даша": 150
@@ -83,7 +88,8 @@ function richestMan(obj) {
     if (key !== undefined) {
         return nameMax + salaryMax;
     } else return "нет сотрудников";
-}*/
+}
+*/
 
 
 

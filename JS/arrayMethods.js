@@ -14,7 +14,8 @@
 // alert( obj.className ); // "open menu new me"
 // P.S. Ваша функция не должна добавлять лишних пробелов.
 
-/*var obj = {
+/*
+var obj = {
     className: 'open menu'
 };
 
@@ -31,7 +32,8 @@ function addClass(obj, cls) {
     classes.push(cls); // добавить
 
     obj.className = classes.join(' '); // и обновить свойство
-}*/
+}
+*/
 
 
 // #2
@@ -46,7 +48,8 @@ function addClass(obj, cls) {
 // removeClass(obj, 'open'); // obj.className='menu'
 // removeClass(obj, 'blabla'); // без изменений (нет такого класса)
 
-/*var obj = {
+/*
+var obj = {
     className: 'open menu'
 };
 
@@ -64,7 +67,8 @@ function removeClass(obj, cls) {
         }
     }
     obj.className = classes.join(" ");
-}*/
+}
+*/
 
 
 // #3
@@ -74,14 +78,16 @@ function removeClass(obj, cls) {
 // отсортируйте?
 // alert( arr ); // 8, 5, 2, 1, -10
 
-/*var arr = [5, 2, 1, -10, 8];
+/*
+var arr = [5, 2, 1, -10, 8];
 
 alert( arr.sort(compareNumeric) ); // если не указать функцию, элементы будут сортироваться как строки
 
 function compareNumeric(a, b) {
     // return a - b;  // возвращает положительное число, если a > b, отрицательное, если наоборот, и 0, если числа равны.
     return b - a; // наоборот
-}*/
+}
+*/
 
 
 // #4
@@ -96,12 +102,14 @@ function compareNumeric(a, b) {
 // alert( arr ); // HTML, JavaScript, CSS (без изменений)
 // Постарайтесь сделать код как можно короче.
 
-/*var arr = ["HTML", "JavaScript", "CSS"];
+/*
+var arr = ["HTML", "JavaScript", "CSS"];
 var arrSorted = arr.slice();
 arrSorted.sort();
 
 alert( arrSorted );
-alert( arr );*/
+alert( arr );
+*/
 
 
 // #5
@@ -110,7 +118,8 @@ alert( arr );*/
 // arr.sort(ваша функция);
 // alert( arr ); // элементы в случайном порядке, например [3,5,1,2,4]
 
-/*var arr = [1, 2, 3, 4, 5];
+/*
+var arr = [1, 2, 3, 4, 5];
 
 arr.sort(randomSort);
 
@@ -118,7 +127,8 @@ function randomSort(a, b) {
 
     return Math.random() - 0.5;
 }
-alert(arr);*/
+alert(arr);
+*/
 
 
 

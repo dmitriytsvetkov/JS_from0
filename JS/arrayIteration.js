@@ -53,7 +53,7 @@ for (var i = 0; i < numbersClone.length; i++) { // алгоритм заполн
 
 alert(numbersClone);*/
 
-function getSums(arr) {
+/*function getSums(arr) {
     var result = [];
     if (!arr.length) return result; // проверка
 
@@ -67,7 +67,7 @@ function getSums(arr) {
 }
 
 alert(getSums([1,2,3,4,5])); // 1,3,6,10,15
-alert(getSums([-2,-1,0,1])); // -2,-3,-3,-2
+alert(getSums([-2,-1,0,1])); // -2,-3,-3,-2*/
 
 
 

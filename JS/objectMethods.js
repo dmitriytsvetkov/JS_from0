@@ -87,9 +87,7 @@ var ladder = {
 ladder.up().up().down().up().down().showStep().up().up().up().showStep();
 */
 
-
-
-
+/*console.log ( [] + null + 1 );*/
 
 
 

@@ -27,7 +27,7 @@
 // Важно: в этой задаче fullName должно остаться свойством, а firstName/lastName – реализованы через get/set. Лишнее дублирование здесь ни к чему.
 
 
-function User(fullName) {
+/*function User(fullName) {
     this.fullName = fullName;
 
     Object.defineProperty(this, "firstName", {
@@ -68,7 +68,7 @@ alert( vasya.lastName ); // Попкин
 // запись в lastName
 vasya.lastName = 'Сидоров';
 
-alert( vasya.fullName ); // Василий Сидоров
+alert( vasya.fullName ); // Василий Сидоров*/
 
 
 

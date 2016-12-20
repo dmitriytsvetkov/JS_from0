@@ -213,6 +213,7 @@ function sum(arr) {
 // It will never give you an empty array (that's not a walk, that's standing still!).
 
 
+/*
 function isValidWalk(walk) {
     if (walk.length != 10) {
         return false;
@@ -231,3 +232,123 @@ function isValidWalk(walk) {
 }
 
 console.log( isValidWalk( ['e','w','e','w','n','s','n','s','e','w'] ) );
+*/
+
+
+// #9
+// We want to create a function, which returns an array of functions, which return their index in the array.
+// For better understanding, here an example:
+
+// var callbacks = createFunctions(5); // create an array, containing 5 functions
+
+// callbacks[0](); // must return 0
+// callbacks[3](); // must return 3
+// We already implemented that function, but when we actually run the code, the result doesn't look like what we expected.
+// Can you spot, what's wrong with it? A test fixture is also available
+
+/*
+function createFunctions(n) {
+    var callbacks = [];
+
+    for (var i=0; i<n; i++) {
+        var shooter = function me() {
+            return me.i;
+        };
+        shooter.i = i;
+        callbacks.push(shooter);
+    }
+
+    return callbacks;
+}
+
+var callbacks = createFunctions(5); // create an array, containing 5 functions
+
+
+console.log( callbacks[4]() ); // must return 3
+*/
+
+
+// #10
+// There's no such thing as private properties on a coffeescript object! But, maybe there are?
+
+// Implement a function createSecretHolder(secret) which accepts any value as secret and returns an object with ONLY two methods
+
+// getSecret() which returns the secret
+// setSecret() which sets the secret
+// obj = createSecretHolder(5)
+// obj.getSecret() # returns 5
+// obj.setSecret(2)
+// obj.getSecret() # returns 2
+
+/*
+function createSecretHolder(secret) {
+    return {
+        getSecret: function() {
+            return secret;
+        },
+        setSecret: function (value) {
+            secret = value;
+        }
+    };
+}
+var obj = createSecretHolder(5);
+obj.getSecret();
+obj.setSecret(3);
+obj.getSecret();
+*/
+
+
+// #11
+// Deferring a function execution can sometimes save a lot of execution time in our programs by postponing the execution
+// to the latest possible instant of time, when we're sure that the time spent while executing it is worth it.
+// Write a method make_lazy that takes in a function (symbol for Ruby) and the arguments to the function and returns another function
+// (lambda for Ruby) which when invoked, returns the result of the original function invoked with the supplied arguments.
+
+// For example:
+
+// Given a function add
+
+// function add (a, b) {
+//      return a + b;
+// }
+// One could make it lazy as:
+
+// var lazy_value = make_lazy(add, 2, 3);
+// The expression does not get evaluated at the moment, but only when you invoke lazy_value as:
+
+// lazy_value() => 5
+// The above invokation then performs the sum.
+// Please note: The functions that are passed to make_lazy may take one or more arguments and the number of arguments is not fixed.
+
+
+function lazyEvalMemo (fn) {
+    var args = arguments;
+    var result;
+    var lazyEval = fn.bind.apply(fn, args);
+    return function () {
+        if (result) {
+            console.log("I remember this one!");
+            return result
+        }
+        console.log("Let me work this out for the first time...");
+        result = lazyEval();
+        return result;
+    }
+}
+function sum (a, b) {
+    console.log("I'm calculating!");
+    return a + b;
+}
+var lazyMemoSum = lazyEvalMemo(sum, 4719340, 397394);
+
+lazyMemoSum();
+//=> Let me work this out for the first time...
+//=> I'm calculating!
+//=> 5116734
+
+lazyMemoSum();
+//=> I remember this one!
+//=> 5116734
+
+
+

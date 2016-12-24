@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab2</title>
+    <script>
+        /*window.onload = function () {*/
+
+
+        /*}*/
+    </script>
+</head>
+<body>
+<style>
+    #outer{width:360px;line-height:30px;text-align:center;}
+    #outer div{float:left;width:30px;height:30px;border:1px solid #ccc;margin:2px;}
+</style>
+
+<div id="outer"></div>
+
+<script>
+    var divs = [];
+    for (var i = 0; i < 100; i++) divs[i] = '<div>' + '</div>';
+
+    document.getElementById('outer').innerHTML = divs.join('');
+</script>
+
+</body>
+</html>

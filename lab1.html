@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab1</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            function printText(str) {
+                var li  = document.createElement("li");
+                li.innerHTML = li.innerHTML  + "[" + str + "]";
+                var list = document.getElementById("olID");
+                list.appendChild(li);
+            }
+
+            var randArr = [];
+            var sortNum = 0;
+            var n = 0;
+
+
+            function isNumeric(n) {
+                return !isNaN(parseFloat(n)) && isFinite(n); // проверка на число
+            }
+
+            function newRandArr(arr) { // Создаем рандомный массив из n элементов
+                var n = +prompt("Введите длинну создаваемого массива: ", ""); // Длинна массива
+                if (isNumeric(n) && n > 0) {
+                    for (var i = 0; i < n; i++) {
+                        arr.push(Math.floor(Math.random() * 10));
+                    }
+                    randArr = arr;
+
+                    sortNum = prompt("Исходный рандомный массив из " + n + " элементов: " + "[" + arr + "]" + "\nВыберите способ сортировки:\n1) Глупая сортировка\n" +
+                        "2) Пузырьковая сортировка\n3) Шейкерная сортировка\n4) Чётно-нечётная сортировка\n5) Сортировка расчёской", "0");
+                    switch (+sortNum) {
+                        case 1:
+                            stupidSort(randArr);
+                            break;
+                        case 2:
+                            bubbleSort(randArr);
+                            break;
+                        case 3:
+                            cocktailSort(randArr);
+                            break;
+                        case 4:
+                            oddEvenSort(randArr);
+                            break;
+                        case 5:
+                            combSort(randArr);
+                            break;
+                        default:
+                            alert("error");
+                    }
+                } else alert("error")
+            }
+
+// Глупая сортировка
+
+            function stupidSort(arr) {
+                var cond = true;
+                while(cond) {
+                    printText(arr);
+                    for (var i = 0; i < arr.length - 1; i++) {
+                        var a = arr[i];
+                        var b = arr[i + 1];
+                        if (a > b) {
+                            arr[i] = b;
+                            arr[i + 1] = a;
+                            break;
+                        }
+                        if(i == arr.length-2) {
+                            cond = false;
+                        }
+                    }
+                }
+                return arr;
+            }
+
+
+// Пузырьковая сортировка
+
+            function bubbleSort(arr) {
+                var i, j, k, n = arr.length;
+                for (j = 0; j < n; j++) {
+                    printText(arr);
+                    for (i = 0; i < n - 1; i++) {
+                        if (arr[i] > arr[i + 1]) {
+                            k = arr[i];
+                            arr[i] = arr[i + 1];
+                            arr[i + 1] = k;
+                        }
+                    }
+                }
+                return arr;
+            }
+
+
+// Шейкерная сортировка
+
+            function cocktailSort(arr)
+            {
+                var swapped;
+                do {
+                    for(var i = 0; i < arr.length - 2; i++) {
+                        if(arr[i] > arr[i+1]) {
+                            var temp = arr[i];
+                            arr[i] = arr[i+1];
+                            arr[i+1] = temp;
+                            swapped = true;
+                            printText(arr);
+                        }
+                    }
+                    if(!swapped) {
+                        break;
+                    }
+                    swapped = false;
+                    for( i = arr.length - 2; i > 0; i--) {
+                        if(arr[i] > arr[i+1]) {
+                            var temp1 = arr[i];
+                            arr[i] = arr[i+1];
+                            arr[i+1] = temp1;
+                            swapped = true;
+                            printText(arr);
+                        }
+                    }
+                } while(swapped);
+                return arr;
+            }
+
+
+// Чётно-нечётная сортировка
+
+            function oddEvenSort(arr) {
+                function swap(arr, i, j) {
+                    var temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+
+                var sorted = false;
+                while (!sorted) {
+                    sorted = true;
+                    for (var i = 1; i < arr.length - 1; i += 2) {
+                        if (arr[i] > arr[i + 1]) {
+                            swap(arr, i, i + 1);
+                            sorted = false;
+                            printText(arr);
+                        }
+                    }
+
+                    for (i = 0; i < arr.length - 1; i += 2) {
+                        if (arr[i] > arr[i + 1]) {
+                            swap(arr, i, i + 1);
+                            sorted = false;
+                            printText(arr);
+                        }
+                    }
+                }
+                return arr;
+            }
+
+// Сортировка расчёской
+
+            function combSort(arr) {
+                var interval = Math.floor(arr.length/1.3);
+                while (interval > 0) {
+                    for(var i=0; i+interval<arr.length; i+=1) {
+                        if (arr[i] > arr[i+interval]) {
+                            var small = arr[i+interval];
+                            arr[i+interval] = arr[i];
+                            arr[i] = small;
+                            printText(arr);
+                        }
+                    }
+                    interval = Math.floor(interval/1.3);
+                }
+                return arr;
+            }
+
+            newRandArr(randArr);
+        }
+    </script>
+</head>
+<body>
+
+        <ol id="olID">
+            Ход сортировки:
+        </ol>
+
+</body>
+</html>

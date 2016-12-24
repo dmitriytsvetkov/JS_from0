@@ -298,7 +298,7 @@ obj.getSecret();
 */
 
 
-// #11
+// #11 // НЕ ДОДЕЛАНО
 // Deferring a function execution can sometimes save a lot of execution time in our programs by postponing the execution
 // to the latest possible instant of time, when we're sure that the time spent while executing it is worth it.
 // Write a method make_lazy that takes in a function (symbol for Ruby) and the arguments to the function and returns another function
@@ -319,36 +319,4 @@ obj.getSecret();
 // lazy_value() => 5
 // The above invokation then performs the sum.
 // Please note: The functions that are passed to make_lazy may take one or more arguments and the number of arguments is not fixed.
-
-
-function lazyEvalMemo (fn) {
-    var args = arguments;
-    var result;
-    var lazyEval = fn.bind.apply(fn, args);
-    return function () {
-        if (result) {
-            console.log("I remember this one!");
-            return result
-        }
-        console.log("Let me work this out for the first time...");
-        result = lazyEval();
-        return result;
-    }
-}
-function sum (a, b) {
-    console.log("I'm calculating!");
-    return a + b;
-}
-var lazyMemoSum = lazyEvalMemo(sum, 4719340, 397394);
-
-lazyMemoSum();
-//=> Let me work this out for the first time...
-//=> I'm calculating!
-//=> 5116734
-
-lazyMemoSum();
-//=> I remember this one!
-//=> 5116734
-
-
 

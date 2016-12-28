@@ -4,17 +4,17 @@
 // #1
 // Перепишите цикл через map
 // Код ниже получает из массива строк новый массив, содержащий их длины:
-// var arr = ["Есть", "жизнь", "на", "Марсе"];
+// var matrix = ["Есть", "жизнь", "на", "Марсе"];
 // var arrLength = [];
-// for (var i = 0; i < arr.length; i++) {
-//      arrLength[i] = arr[i].length;
+// for (var i = 0; i < matrix.length; i++) {
+//      arrLength[i] = matrix[i].length;
 // }
 
 // alert( arrLength ); // 4,5,2,5
 
 /*
-var arr = ["Есть", "жизнь", "на", "Марсе"];
-var arrLength = arr.map(function (name) {
+var matrix = ["Есть", "жизнь", "на", "Марсе"];
+var arrLength = matrix.map(function (name) {
     return name.length;
 });
 
@@ -24,19 +24,19 @@ alert( arrLength );
 
 // #2
 // Массив частичных сумм
-// На входе массив чисел, например: arr = [1,2,3,4,5].
-// Напишите функцию getSums(arr), которая возвращает массив его частичных сумм.
+// На входе массив чисел, например: matrix = [1,2,3,4,5].
+// Напишите функцию getSums(matrix), которая возвращает массив его частичных сумм.
 
-// Иначе говоря, вызов getSums(arr) должен возвращать новый массив из такого же числа элементов, 
-// в котором на каждой позиции должна быть сумма элементов arr до этой позиции включительно.
+// Иначе говоря, вызов getSums(matrix) должен возвращать новый массив из такого же числа элементов,
+// в котором на каждой позиции должна быть сумма элементов matrix до этой позиции включительно.
 
 // То есть:
-// для arr = [ 1, 2, 3, 4, 5 ]
-// getSums( arr ) = [ 1, 1+2, 1+2+3, 1+2+3+4, 1+2+3+4+5 ] = [ 1, 3, 6, 10, 15 ]
+// для matrix = [ 1, 2, 3, 4, 5 ]
+// getSums( matrix ) = [ 1, 1+2, 1+2+3, 1+2+3+4, 1+2+3+4+5 ] = [ 1, 3, 6, 10, 15 ]
 // Еще пример: getSums([-2,-1,0,1]) = [-2,-3,-3,-2].
 
 // Функция не должна модифицировать входной массив.
-// В решении используйте метод arr.reduce.
+// В решении используйте метод matrix.reduce.
 
 /*
 var numbersClone = numbers.slice();
@@ -54,15 +54,15 @@ alert(numbersClone);
 */
 
 
-/*function getSums(arr) {
+/*function getSums(matrix) {
     var result = [];
-    if (!arr.length) return result; // проверка
+    if (!matrix.length) return result; // проверка
 
-    var totalSum = arr.reduce(function(sum, item) {
+    var totalSum = matrix.reduce(function(sum, item) {
         result.push(sum); // пушим текущее значение после каждой итерации
         return sum + item;
     });
-    result.push(totalSum); // результат метода arr.reduce
+    result.push(totalSum); // результат метода matrix.reduce
 
     return result;
 }

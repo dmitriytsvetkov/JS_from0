@@ -206,33 +206,33 @@ users.forEach(function(user) {
 
 // #5
 // Фильтрация через функцию
-// Создайте функцию filter(arr, func), которая получает массив arr и возвращает новый,
-// в который входят только те элементы arr, для которых func возвращает true.
+// Создайте функцию filter(matrix, func), которая получает массив matrix и возвращает новый,
+// в который входят только те элементы matrix, для которых func возвращает true.
 // Создайте набор «готовых фильтров»: inBetween(a,b) – «между a,b», inArray([...]) – "в массиве [...]". Использование должно быть таким:
-//     filter(arr, inBetween(3,6)) – выберет только числа от 3 до 6,
-//     filter(arr, inArray([1,2,3])) – выберет только элементы, совпадающие с одним из значений массива.
+//     filter(matrix, inBetween(3,6)) – выберет только числа от 3 до 6,
+//     filter(matrix, inArray([1,2,3])) – выберет только элементы, совпадающие с одним из значений массива.
 //     Пример, как это должно работать:
 
     /* .. ваш код для filter, inBetween, inArray */
-//     var arr = [1, 2, 3, 4, 5, 6, 7];
+//     var matrix = [1, 2, 3, 4, 5, 6, 7];
 
-// alert(filter(arr, function(a) {
+// alert(filter(matrix, function(a) {
 //     return a % 2 == 0
 // })); // 2,4,6
 
-// alert( filter(arr, inBetween(3, 6)) ); // 3,4,5,6
+// alert( filter(matrix, inBetween(3, 6)) ); // 3,4,5,6
 
-// alert( filter(arr, inArray([1, 2, 10])) ); // 1,2
+// alert( filter(matrix, inArray([1, 2, 10])) ); // 1,2
 
 /*
 
-var arr = [1, 2, 3, 4, 5, 6, 7, 22, 19];
+var matrix = [1, 2, 3, 4, 5, 6, 7, 22, 19];
 
 
-function filter(arr, func) {
+function filter(matrix, func) {
     var result = [];
-    for (var i = 0; i < arr.length; i++) { // перебор массива
-        var value = arr[i];
+    for (var i = 0; i < matrix.length; i++) { // перебор массива
+        var value = matrix[i];
         if (func(value)) {
             result.push(value); // пушим елемент если func(value) == true
         }
@@ -245,16 +245,16 @@ function inBetween(a, b) {
         return x >= a && x <= b;
     }
 }
-function inArray(arr) {
+function inArray(matrix) {
     return function (x) {
-        return arr.indexOf(x) != -1; // ищем и возвращаем массив
+        return matrix.indexOf(x) != -1; // ищем и возвращаем массив
     }
 }
-console.log(filter(arr, function(a) {
+console.log(filter(matrix, function(a) {
     return a % 2 == 0
 })); // 2,4,6
-console.log( filter(arr, inBetween(3, 9)) );
-console.log( filter(arr, inArray([1,3,7])) );
+console.log( filter(matrix, inBetween(3, 9)) );
+console.log( filter(matrix, inArray([1,3,7])) );
 */
 
 

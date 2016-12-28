@@ -74,14 +74,14 @@ function removeClass(obj, cls) {
 // #3
 // Сортировать в обратном порядке
 // Как отсортировать массив чисел в обратном порядке?
-// var arr = [5, 2, 1, -10, 8];
+// var matrix = [5, 2, 1, -10, 8];
 // отсортируйте?
-// alert( arr ); // 8, 5, 2, 1, -10
+// alert( matrix ); // 8, 5, 2, 1, -10
 
 /*
-var arr = [5, 2, 1, -10, 8];
+var matrix = [5, 2, 1, -10, 8];
 
-alert( arr.sort(compareNumeric) ); // если не указать функцию, элементы будут сортироваться как строки
+alert( matrix.sort(compareNumeric) ); // если не указать функцию, элементы будут сортироваться как строки
 
 function compareNumeric(a, b) {
     // return a - b;  // возвращает положительное число, если a > b, отрицательное, если наоборот, и 0, если числа равны.
@@ -92,42 +92,42 @@ function compareNumeric(a, b) {
 
 // #4
 // Скопировать и отсортировать массив
-// Есть массив строк arr. Создайте массив arrSorted – из тех же элементов, но отсортированный.
+// Есть массив строк matrix. Создайте массив arrSorted – из тех же элементов, но отсортированный.
 // Исходный массив не должен меняться.
-// var arr = ["HTML", "JavaScript", "CSS"];
+// var matrix = ["HTML", "JavaScript", "CSS"];
 
 // ... ваш код ...
 
 // alert( arrSorted ); // CSS, HTML, JavaScript
-// alert( arr ); // HTML, JavaScript, CSS (без изменений)
+// alert( matrix ); // HTML, JavaScript, CSS (без изменений)
 // Постарайтесь сделать код как можно короче.
 
 /*
-var arr = ["HTML", "JavaScript", "CSS"];
-var arrSorted = arr.slice();
+var matrix = ["HTML", "JavaScript", "CSS"];
+var arrSorted = matrix.slice();
 arrSorted.sort();
 
 alert( arrSorted );
-alert( arr );
+alert( matrix );
 */
 
 
 // #5
 // Используйте функцию sort для того, чтобы «перетрясти» элементы массива в случайном порядке.
-// var arr = [1, 2, 3, 4, 5];
-// arr.sort(ваша функция);
-// alert( arr ); // элементы в случайном порядке, например [3,5,1,2,4]
+// var matrix = [1, 2, 3, 4, 5];
+// matrix.sort(ваша функция);
+// alert( matrix ); // элементы в случайном порядке, например [3,5,1,2,4]
 
 /*
-var arr = [1, 2, 3, 4, 5];
+var matrix = [1, 2, 3, 4, 5];
 
-arr.sort(randomSort);
+matrix.sort(randomSort);
 
 function randomSort(a, b) {
 
     return Math.random() - 0.5;
 }
-alert(arr);
+alert(matrix);
 */
 
 

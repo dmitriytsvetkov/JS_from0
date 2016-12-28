@@ -26,16 +26,16 @@ alert(goods);
 // #3
 // Получить случайное значение из массива
 // Напишите код для вывода alert случайного значения из массива:
-// var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+// var matrix = ["Яблоко", "Апельсин", "Груша", "Лимон"];
 // P.S. Код для генерации случайного целого от min to max включительно:
 // var rand = min + Math.floor(Math.random() * (max + 1 - min));
 
 /*
-var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+var matrix = ["Яблоко", "Апельсин", "Груша", "Лимон"];
 
-var rand = Math.floor(Math.random() * ( (arr.length - 1) + 1) );
+var rand = Math.floor(Math.random() * ( (matrix.length - 1) + 1) );
 
-alert( arr[rand] );
+alert( matrix[rand] );
 */
 
 
@@ -48,19 +48,19 @@ alert( arr[rand] );
 // Выводит сумму всех значений массива
 
 /*
-var arr = [];
+var matrix = [];
 
 while (true) {
     var x = prompt("Введите очередной элемент массива:", "" );
     if ( isNumeric(x) ) {
-        arr.push(x);
+        matrix.push(x);
     }   else break;
 }
 
 var sum = 0;
 
-for (var i = 0; i < arr.length; i++) {
-    sum += +arr[i];
+for (var i = 0; i < matrix.length; i++) {
+    sum += +matrix[i];
 }
 alert(sum);
 
@@ -73,26 +73,26 @@ function isNumeric(n) {
 
 // #5
 // Поиск в массиве
-// Создайте функцию find(arr, value),
-// которая ищет в массиве arr значение value и возвращает его номер, если найдено, или -1, если не найдено.
+// Создайте функцию find(matrix, value),
+// которая ищет в массиве matrix значение value и возвращает его номер, если найдено, или -1, если не найдено.
 // Например:
-// arr = ["test", 2, 1.5, false];
+// matrix = ["test", 2, 1.5, false];
 
-// find(arr, "test"); // 0
-// find(arr, 2); // 1
-// find(arr, 1.5); // 2
-// find(arr, 0); // -1
+// find(matrix, "test"); // 0
+// find(matrix, 2); // 1
+// find(matrix, 1.5); // 2
+// find(matrix, 0); // -1
 
 /*
-var arr = ["a", -1, 2, "b"];
+var matrix = ["a", -1, 2, "b"];
 
-var index = find(arr, 2);
+var index = find(matrix, 2);
 
 alert( index );
 
-function find(arr, value) {
-    for (var i = 0; i < arr.length; i++) {
-        if (arr[i] === value) {
+function find(matrix, value) {
+    for (var i = 0; i < matrix.length; i++) {
+        if (matrix[i] === value) {
             return i;
         } else return -1;
     }

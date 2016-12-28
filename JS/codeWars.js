@@ -105,9 +105,9 @@ var questions = [{
     corAnswer: 0
 }];
 
-function addUsersAnswer(arr) {
-    for (var i = 0; i < arr.length; i++) {
-        arr[i].usersAnswer = null;
+function addUsersAnswer(matrix) {
+    for (var i = 0; i < matrix.length; i++) {
+        matrix[i].usersAnswer = null;
     }
 }
 
@@ -193,8 +193,8 @@ console.log ( getVillainName(new Date()) );
 // function of the built-in javascript Array object. If you're not familiar with reduce(), reading over the documentation may help.
 
 /*
-function sum(arr) {
-    return arr.reduce(function(sum, current) {
+function sum(matrix) {
+    return matrix.reduce(function(sum, current) {
         return sum + current
     });
 }

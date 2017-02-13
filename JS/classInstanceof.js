@@ -25,17 +25,17 @@
 /*function formatDate(date) {
 	var dateClass = getClass(date);
 	if (dateClass === "String") {
-		console.log( toRussianDate(date) );
+		return toRussianDate(date);
 	} else if (dateClass === "Number") {
 			var numDate = new Date(date * 1000).toLocaleString().substring(0, 10);
-			console.log( toRussianDate(numDate) );
+		return toRussianDate(numDate);
 	} else if (dateClass === "Array") {
 		var arrDate = date.join("-");
 		arrDate.toLocaleString().substring(0, 10);
-		console.log( toRussianDate(arrDate) )
+		return toRussianDate(arrDate)
 	} else if (dateClass === "Date") {
 		var dateDate = date.toLocaleString().substring(0, 10);
-		console.log( toRussianDate(dateDate) );
+		return toRussianDate(dateDate);
 	}
 }
 
@@ -51,8 +51,8 @@ function toRussianDate(str) {
 	return day + "." + month + "." + year;
 }
 
-formatDate("2011-10-02");
-formatDate(1234567890);
-formatDate([2014, 0, 1]);
-formatDate(new Date(2014, 0, 1));*/
+console.log( formatDate("2011-10-02") );
+console.log( formatDate(1234567890) );
+console.log( formatDate([2014, 0, 1]) );
+console.log( formatDate(new Date(2014, 0, 1)) );*/
 

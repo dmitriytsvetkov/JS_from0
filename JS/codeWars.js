@@ -320,17 +320,96 @@ obj.getSecret();
 // The above invokation then performs the sum.
 // Please note: The functions that are passed to make_lazy may take one or more arguments and the number of arguments is not fixed.
 
+// #12
+// Invert a given list of integer values.
+
+// Python/JS/PHP:
+
+// invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
+// invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
+// invert([]) == []
+// You can assume that all values are integers.
+
+/*
+function invert(arr) {
+	return arr.map(function (i) {
+		return (i > 0) ? -i : Math.abs(i);
+	})
+}
+
+console.log( invert([1,-3]) );
+*/
+
+// #13
+// Given an array of integers.
+
+// Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers.
+
+// 		If the input array is empty or null, return an empty array:
+
+// 		C#/Java: new int[] {} / new int[0];
+// C++: std::vector<int>();
+// JavaScript/CoffeeScript/PHP/Haskell: [];
+// Rust: Vec::<i32>::new();
+// ATTENTION!
+// 
+// 		The passed array should NOT be changed. Read more here.
+
+// 		For example:
+
+// 		input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]
+// return [10, -65].
+
+/*
+function countPositivesSumNegatives(input) {
+	var positiveCount = 0;
+	var negativeSum = 0;
+	var res = [];
+	if(input == null || input == undefined) {
+		return [];
+	}
+
+	for (var i = 0; i < input.length; i++) {
+		(input[i] > 0) ? positiveCount += 1 : negativeSum += input[i];
+
+	}
+
+	if(positiveCount) {
+		res[0] = positiveCount;
+	}
+	if(negativeSum == 0) {
+		res[1] = 0;
+	} else if (negativeSum) {
+		res[1] = negativeSum;
+	}
+	return res;
+}
+
+console.log( countPositivesSumNegatives( null) );
+*/
+
+/*function generateRange(min, max, step){
+	var arr = [min];
+	while(!arr.length == max) {
+		arr.push(min + step);
+	}
+	return arr;
+}
+
+console.log( generateRange(2, 10, 2) ); // should return array of [2,4,6,8,10]
+console.log( generateRange(1, 10, 3) ); // should return array of [1,4,7,10]*/
 
 
+/*
+function generateRange(min, max, step){
+	var arr = [];
+	for (var i = min; i <= max; i+=step) {
+		arr.push(i);
+	}
+	return arr;
+}
 
 
-
-
-
-
-
-
-
-
-
+console.log( generateRange(1, 10, 3) );
+*/
 

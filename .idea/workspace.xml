@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9761a4a-9bdb-4968-adf1-933cd5871234" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/classInstanceof.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/decorators.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/gettersSetters.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/internalExternalInterface.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/json.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/settimeoutSetinterval.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/tryCatch.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS/classInstanceof.js" afterPath="$PROJECT_DIR$/JS/classInstanceof.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS/codeWars.js" afterPath="$PROJECT_DIR$/JS/codeWars.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
@@ -30,27 +36,17 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+              <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="codeWars.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS/codeWars.js">
+      <file leaf-file-name="gettersSetters.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JS/gettersSetters.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="322" column="0" lean-forward="true" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="classInstanceof.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JS/classInstanceof.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            <state relative-caret-position="404">
+              <caret line="279" column="13" lean-forward="false" selection-start-line="279" selection-start-column="13" selection-end-line="279" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -70,7 +66,16 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>выдели</find>
+      <find>cono</find>
+      <find>Vasya</find>
+      <find>vasya</find>
+      <find>alert</find>
     </findStrings>
+    <replaceStrings>
+      <replace>vasya</replace>
+      <replace>user</replace>
+      <replace>console.log</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -108,9 +113,15 @@
         <option value="$PROJECT_DIR$/style.scss" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/JS/callApply.js" />
+        <option value="$PROJECT_DIR$/JS/classInstanceof.js" />
+        <option value="$PROJECT_DIR$/JS/json.js" />
+        <option value="$PROJECT_DIR$/JS/decorators.js" />
+        <option value="$PROJECT_DIR$/JS/settimeoutSetinterval.js" />
+        <option value="$PROJECT_DIR$/JS/tryCatch.js" />
+        <option value="$PROJECT_DIR$/JS/internalExternalInterface.js" />
         <option value="$PROJECT_DIR$/JS/codeWars.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/JS/classInstanceof.js" />
+        <option value="$PROJECT_DIR$/JS/gettersSetters.js" />
       </list>
     </option>
   </component>
@@ -150,7 +161,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -194,6 +204,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -221,20 +232,20 @@
       <recent name="C:\Users\Dmitriy\Desktop\JS_from0" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.classInstanceof.js">
-    <configuration default="false" name="objectConversion.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="objectConversion.js" working-dir="$PROJECT_DIR$/JS">
+  <component name="RunManager" selected="Node.js.gettersSetters.js">
+    <configuration default="false" name="settimeoutSetinterval.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="settimeoutSetinterval.js" working-dir="$PROJECT_DIR$/JS">
       <method />
     </configuration>
-    <configuration default="false" name="staticPropertiesAndMethods.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="staticPropertiesAndMethods.js" working-dir="$PROJECT_DIR$/JS">
+    <configuration default="false" name="decorators.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="decorators.js" working-dir="$PROJECT_DIR$/JS">
       <method />
     </configuration>
-    <configuration default="false" name="callApply.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="callApply.js" working-dir="$PROJECT_DIR$/JS">
+    <configuration default="false" name="internalExternalInterface.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="internalExternalInterface.js" working-dir="$PROJECT_DIR$/JS">
       <method />
     </configuration>
     <configuration default="false" name="codeWars.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="codeWars.js" working-dir="$PROJECT_DIR$/JS">
       <method />
     </configuration>
-    <configuration default="false" name="classInstanceof.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="classInstanceof.js" working-dir="$PROJECT_DIR$/JS">
+    <configuration default="false" name="gettersSetters.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="gettersSetters.js" working-dir="$PROJECT_DIR$/JS">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -297,19 +308,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.objectConversion.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.staticPropertiesAndMethods.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.callApply.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.settimeoutSetinterval.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.decorators.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.internalExternalInterface.js" />
       <item index="3" class="java.lang.String" itemvalue="Node.js.codeWars.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.classInstanceof.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.gettersSetters.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.classInstanceof.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.gettersSetters.js" />
         <item index="1" class="java.lang.String" itemvalue="Node.js.codeWars.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.callApply.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.staticPropertiesAndMethods.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.objectConversion.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.internalExternalInterface.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.decorators.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.settimeoutSetinterval.js" />
       </list>
     </recent_temporary>
   </component>
@@ -358,11 +369,16 @@
       <workItem from="1483211170612" duration="5621000" />
       <workItem from="1486067160191" duration="4372000" />
       <workItem from="1486149189243" duration="8100000" />
+      <workItem from="1486210461832" duration="1760000" />
+      <workItem from="1486302181814" duration="15815000" />
+      <workItem from="1486496327731" duration="3238000" />
+      <workItem from="1486639617980" duration="10828000" />
+      <workItem from="1487005283208" duration="5587000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257866000" />
+    <option name="totallyTimeSpent" value="295094000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -403,53 +419,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JS/datetime.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/arrayMethods.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2856">
-          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/arrayIteration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/recursion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="49" column="9" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JS/arrayMethods.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -712,14 +686,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="37" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/classInstanceof.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/json.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/decorators.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JS/codeWars.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="322" column="0" lean-forward="true" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
+        <state relative-caret-position="932">
+          <caret line="413" column="0" lean-forward="false" selection-start-line="413" selection-start-column="0" selection-end-line="413" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/internalExternalInterface.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/tryCatch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="29" column="11" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/settimeoutSetinterval.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -727,15 +745,15 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JS/classInstanceof.js">
+    <entry file="file://$PROJECT_DIR$/JS/gettersSetters.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state relative-caret-position="404">
+          <caret line="279" column="13" lean-forward="false" selection-start-line="279" selection-start-column="13" selection-end-line="279" selection-end-column="13" />
           <folding />
         </state>
       </provider>

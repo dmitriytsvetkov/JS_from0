@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9761a4a-9bdb-4968-adf1-933cd5871234" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/decorators.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/gettersSetters.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/internalExternalInterface.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/json.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/settimeoutSetinterval.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/tryCatch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/functionalInheritance.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS/prototype.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS/classInstanceof.js" afterPath="$PROJECT_DIR$/JS/classInstanceof.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS/codeWars.js" afterPath="$PROJECT_DIR$/JS/codeWars.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -36,18 +30,40 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+              <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gettersSetters.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gettersSetters.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JS/gettersSetters.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="279" column="13" lean-forward="false" selection-start-line="279" selection-start-column="13" selection-end-line="279" selection-end-column="13" />
+            <state relative-caret-position="8424">
+              <caret line="353" column="0" lean-forward="false" selection-start-line="353" selection-start-column="0" selection-end-line="353" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functionalInheritance.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS/functionalInheritance.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="366" column="0" lean-forward="false" selection-start-line="366" selection-start-column="0" selection-end-line="366" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prototype.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JS/prototype.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="524">
+              <caret line="43" column="2" lean-forward="true" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#44#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,8 +136,10 @@
         <option value="$PROJECT_DIR$/JS/tryCatch.js" />
         <option value="$PROJECT_DIR$/JS/internalExternalInterface.js" />
         <option value="$PROJECT_DIR$/JS/codeWars.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/JS/gettersSetters.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/JS/functionalInheritance.js" />
+        <option value="$PROJECT_DIR$/JS/prototype.js" />
       </list>
     </option>
   </component>
@@ -138,10 +156,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-7" />
+    <option name="width" value="1932" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -161,6 +178,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -204,7 +222,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,13 +249,7 @@
       <recent name="C:\Users\Dmitriy\Desktop\JS_from0" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.gettersSetters.js">
-    <configuration default="false" name="settimeoutSetinterval.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="settimeoutSetinterval.js" working-dir="$PROJECT_DIR$/JS">
-      <method />
-    </configuration>
-    <configuration default="false" name="decorators.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="decorators.js" working-dir="$PROJECT_DIR$/JS">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Node.js.prototype.js">
     <configuration default="false" name="internalExternalInterface.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="internalExternalInterface.js" working-dir="$PROJECT_DIR$/JS">
       <method />
     </configuration>
@@ -246,6 +257,12 @@
       <method />
     </configuration>
     <configuration default="false" name="gettersSetters.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="gettersSetters.js" working-dir="$PROJECT_DIR$/JS">
+      <method />
+    </configuration>
+    <configuration default="false" name="functionalInheritance.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="functionalInheritance.js" working-dir="$PROJECT_DIR$/JS">
+      <method />
+    </configuration>
+    <configuration default="false" name="prototype.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="prototype.js" working-dir="$PROJECT_DIR$/JS">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -308,19 +325,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.settimeoutSetinterval.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.decorators.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.internalExternalInterface.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.codeWars.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.gettersSetters.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.internalExternalInterface.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.codeWars.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.gettersSetters.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.functionalInheritance.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.prototype.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.gettersSetters.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.codeWars.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.internalExternalInterface.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.decorators.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.settimeoutSetinterval.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.prototype.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.functionalInheritance.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.gettersSetters.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.codeWars.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.internalExternalInterface.js" />
       </list>
     </recent_temporary>
   </component>
@@ -374,11 +391,13 @@
       <workItem from="1486496327731" duration="3238000" />
       <workItem from="1486639617980" duration="10828000" />
       <workItem from="1487005283208" duration="5587000" />
+      <workItem from="1487085190161" duration="6299000" />
+      <workItem from="1488300564253" duration="1483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295094000" />
+    <option name="totallyTimeSpent" value="302876000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -390,14 +409,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-7" y="0" width="1932" height="1047" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14010416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13987474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23695652" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16521738" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16684961" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -424,20 +443,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JS/arrayMethods.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/numbers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="33" column="49" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JS/array.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1656">
@@ -722,7 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -730,7 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="29" column="11" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,6 +741,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="692">
           <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/gettersSetters.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8424">
+          <caret line="353" column="0" lean-forward="false" selection-start-line="353" selection-start-column="0" selection-end-line="353" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -745,16 +755,26 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+          <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JS/gettersSetters.js">
+    <entry file="file://$PROJECT_DIR$/JS/functionalInheritance.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="279" column="13" lean-forward="false" selection-start-line="279" selection-start-column="13" selection-end-line="279" selection-end-column="13" />
+        <state relative-caret-position="371">
+          <caret line="366" column="0" lean-forward="false" selection-start-line="366" selection-start-column="0" selection-end-line="366" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/prototype.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="43" column="2" lean-forward="true" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

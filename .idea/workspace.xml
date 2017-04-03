@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9761a4a-9bdb-4968-adf1-933cd5871234" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modifying-document.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/multi-insert.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS/array.js" afterPath="$PROJECT_DIR$/JS/array.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modifying-document.html" afterPath="$PROJECT_DIR$/modifying-document.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -99,11 +101,31 @@
       <file leaf-file-name="modifying-document.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modifying-document.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-635">
-              <caret line="165" column="12" lean-forward="false" selection-start-line="165" selection-start-column="12" selection-end-line="165" selection-end-column="12" />
+            <state relative-caret-position="751">
+              <caret line="211" column="3" lean-forward="false" selection-start-line="211" selection-start-column="3" selection-end-line="211" selection-end-column="3" />
               <folding>
-                <marker date="1491240117386" expanded="true" signature="9:524" ph="..." />
+                <marker date="1491253267271" expanded="true" signature="9:524" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="array.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS/array.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="multi-insert.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/multi-insert.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,7 +163,6 @@
       <list>
         <option value="$PROJECT_DIR$/JS/ifelse.js" />
         <option value="$PROJECT_DIR$/arrayIteration.js" />
-        <option value="$PROJECT_DIR$/JS/array.js" />
         <option value="$PROJECT_DIR$/JS/arrayIteration.js" />
         <option value="$PROJECT_DIR$/JS/arrayMethods.js" />
         <option value="$PROJECT_DIR$/JS/bitwiseOperations.js" />
@@ -183,6 +204,8 @@
         <option value="$PROJECT_DIR$/searching-elements-dom.html" />
         <option value="$PROJECT_DIR$/traversing-dom.html" />
         <option value="$PROJECT_DIR$/attributes-and-custom-properties.html" />
+        <option value="$PROJECT_DIR$/multi-insert.html" />
+        <option value="$PROJECT_DIR$/JS/array.js" />
         <option value="$PROJECT_DIR$/modifying-document.html" />
       </list>
     </option>
@@ -249,6 +272,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JS_from0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JS_from0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -292,13 +329,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.attributes-and-custom-properties.html">
-    <configuration default="false" name="gettersSetters.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="gettersSetters.js" working-dir="$PROJECT_DIR$/JS">
-      <method />
-    </configuration>
-    <configuration default="false" name="functionalInheritance.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="functionalInheritance.js" working-dir="$PROJECT_DIR$/JS">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Node.js.array.js">
     <configuration default="false" name="prototype.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="prototype.js" working-dir="$PROJECT_DIR$/JS">
       <method />
     </configuration>
@@ -306,6 +337,12 @@
       <method />
     </configuration>
     <configuration default="false" name="attributes-and-custom-properties.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS_from0/attributes-and-custom-properties.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="modifying-document.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS_from0/modifying-document.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="array.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="array.js" working-dir="$PROJECT_DIR$/JS">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -375,19 +412,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.gettersSetters.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.functionalInheritance.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.prototype.js" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.traversing-dom.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.attributes-and-custom-properties.html" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.prototype.js" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.traversing-dom.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.attributes-and-custom-properties.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.modifying-document.html" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.array.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.attributes-and-custom-properties.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.traversing-dom.html" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.prototype.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.functionalInheritance.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.gettersSetters.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.array.js" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.modifying-document.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.attributes-and-custom-properties.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.traversing-dom.html" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.prototype.js" />
       </list>
     </recent_temporary>
   </component>
@@ -451,12 +488,12 @@
       <workItem from="1490626566970" duration="30000" />
       <workItem from="1490626655814" duration="1458000" />
       <workItem from="1491054278427" duration="2333000" />
-      <workItem from="1491234909909" duration="4409000" />
+      <workItem from="1491234909909" duration="9631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="316715000" />
+    <option name="totallyTimeSpent" value="321937000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -475,7 +512,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23695652" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16684961" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16630435" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -516,24 +553,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JS/recursion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JS/ifelse.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS/array.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1944">
-          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -831,12 +854,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/multi-insert.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS/array.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modifying-document.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-635">
-          <caret line="165" column="12" lean-forward="false" selection-start-line="165" selection-start-column="12" selection-end-line="165" selection-end-column="12" />
+        <state relative-caret-position="751">
+          <caret line="211" column="3" lean-forward="false" selection-start-line="211" selection-start-column="3" selection-end-line="211" selection-end-column="3" />
           <folding>
-            <marker date="1491240117386" expanded="true" signature="9:524" ph="..." />
+            <marker date="1491253267271" expanded="true" signature="9:524" ph="..." />
           </folding>
         </state>
       </provider>

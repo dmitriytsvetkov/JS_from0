@@ -155,20 +155,21 @@
 </script>
 </body>
 </html>
--->
 
-<!doctype html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html>
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<meta charset="utf-8">
 </head>
+
 <body>
+
+<div id="container"></div>
+
 <script>
-	/*var data = {
+	var data = {
 		"Рыбы": {
 			"Форель": {},
 			"Щука": {}
@@ -183,46 +184,29 @@
 				"Берёза": {},
 				"Тополь": {}
 			}
+
 		}
 	};
 
-	for (var key in data) {
-// этот код будет вызван для каждого свойства объекта
-// ..и выведет имя свойства и его значение
+	function createTree(container, obj) {
+		container.innerHTML = createTreeText(obj);
+	}
 
-		alert( "Ключ: " + key + " значение: " + data[key] );
-	}*/
+	function createTreeText(obj) {
+		var li = '';
+		for (var key in obj) {
+			li += '<li>' + key + createTreeText(obj[key]) + '</li>';
+		}
+		if (li) {
+			var ul = '<ul>' + li + '</ul>'
+		}
+		return ul || '';
+	}
 
-
+	var container = document.getElementById('container');
+	createTree(container, data);
 </script>
-<ul id="data">
-	<li>Рыбы
-		<ul>
-			<li>Форель</li>
-			<li>Щука</li>
-		</ul>
-	</li>
-	<li>Деревья
-		<ul>
-			<li>Хвойные
-				<ul>
-					<li>Лиственница</li>
-					<li>Ель</li>
-				</ul>
-			</li>
-		</ul>
-		<ul>
-			<li>Цветковые
-				<ul>
-					<li>Берёза</li>
-					<li>Тополь</li>
-				</ul>
-			</li>
-		</ul>
-	</li>
-
-</ul>
-
-
 </body>
+
 </html>
+-->

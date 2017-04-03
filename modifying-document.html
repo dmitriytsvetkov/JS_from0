@@ -1,0 +1,228 @@
+
+
+<!--#1
+Напишите функцию insertAfter(elem, refElem), которая добавит elem после узла refElem.
+
+<div>Это</div>
+<div>Элементы</div>
+
+<script>
+	var elem = document.createElement('div');
+	elem.innerHTML = '<b>Новый элемент</b>';
+
+	function insertAfter(elem, refElem) { /* ваш код */ }
+
+	var body = document.body;
+
+	// вставить elem после первого элемента
+	insertAfter(elem, body.firstChild); // <--- должно работать
+
+	// вставить elem за последним элементом
+	insertAfter(elem, body.lastChild); // <--- должно работать
+</script>
+
+
+<div>Это</div>
+<div>Элементы</div>
+
+<script>
+	var elem = document.createElement('div');
+	elem.innerHTML = '<b>Новый элемент</b>';
+
+	function insertAfter(elem, refElem) {
+		return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
+	}
+
+	var body = document.body;
+
+	// вставить elem после первого элемента
+	insertAfter(elem, body.children[0]); // <--- должно работать
+
+
+
+</script>
+</body>
+</html>
+-->
+
+<!--#2
+Напишите функцию removeChildren, которая удаляет всех потомков элемента.
+
+<table id="table">
+  <tr>
+    <td>Это</td>
+    <td>Все</td>
+    <td>Элементы DOM</td>
+  </tr>
+</table>
+
+<ol id="ol">
+  <li>Вася</li>
+  <li>Петя</li>
+  <li>Маша</li>
+  <li>Даша</li>
+</ol>
+
+<script>
+  function removeChildren(elem) { /* ваш код */ }
+
+  removeChildren(table); // очищает таблицу
+  removeChildren(ol); // очищает список
+</script>
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+
+<table id="table">
+	<tr>
+		<td>Это</td>
+		<td>Все</td>
+		<td>Элементы DOM</td>
+	</tr>
+</table>
+
+<ol id="ol">
+	<li>Вася</li>
+	<li>Петя</li>
+	<li>Маша</li>
+	<li>Даша</li>
+</ol>
+
+<script>
+	function removeChildren(elem) {
+		while (elem.lastChild) {
+			elem.removeChild(elem.lastChild);
+		}
+	}
+
+	removeChildren(table); // очищает таблицу
+	removeChildren(ol); // очищает список
+</script>
+
+</body>
+</html>
+-->
+
+<!--#3
+Напишите интерфейс для создания списка.
+
+Для каждого пункта:
+
+Запрашивайте содержимое пункта у пользователя с помощью prompt.
+Создавайте пункт и добавляйте его к UL.
+Процесс прерывается, когда пользователь нажимает ESC или вводит пустую строку.
+Все элементы должны создаваться динамически.
+
+Если посетитель вводит теги – пусть в списке они показываются как обычный текст.
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+<ul id="list">
+
+</ul>
+
+<script>
+
+	while (true) {
+		var liInner = prompt("Введите содержимое элемента:", "");
+		if(!liInner) {
+			break;
+		} else {
+			var newLi = document.createElement("li");
+			list.appendChild(newLi);
+			newLi.appendChild(document.createTextNode(liInner));
+
+		}
+	}
+
+
+</script>
+</body>
+</html>
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+<script>
+	/*var data = {
+		"Рыбы": {
+			"Форель": {},
+			"Щука": {}
+		},
+
+		"Деревья": {
+			"Хвойные": {
+				"Лиственница": {},
+				"Ель": {}
+			},
+			"Цветковые": {
+				"Берёза": {},
+				"Тополь": {}
+			}
+		}
+	};
+
+	for (var key in data) {
+// этот код будет вызван для каждого свойства объекта
+// ..и выведет имя свойства и его значение
+
+		alert( "Ключ: " + key + " значение: " + data[key] );
+	}*/
+
+
+</script>
+<ul id="data">
+	<li>Рыбы
+		<ul>
+			<li>Форель</li>
+			<li>Щука</li>
+		</ul>
+	</li>
+	<li>Деревья
+		<ul>
+			<li>Хвойные
+				<ul>
+					<li>Лиственница</li>
+					<li>Ель</li>
+				</ul>
+			</li>
+		</ul>
+		<ul>
+			<li>Цветковые
+				<ul>
+					<li>Берёза</li>
+					<li>Тополь</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+
+</ul>
+
+
+</body>
+</html>

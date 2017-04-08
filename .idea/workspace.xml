@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9761a4a-9bdb-4968-adf1-933cd5871234" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles-and-classes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metrics.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -89,18 +89,28 @@
       <file leaf-file-name="attributes-and-custom-properties.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/attributes-and-custom-properties.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
+            <state relative-caret-position="2156">
               <caret line="98" column="40" lean-forward="false" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles-and-classes.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="styles-and-classes.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles-and-classes.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="663">
               <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="metrics.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/metrics.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="737">
+              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -184,6 +194,7 @@
         <option value="$PROJECT_DIR$/modifying-document.html" />
         <option value="$PROJECT_DIR$/multi-insert.html" />
         <option value="$PROJECT_DIR$/styles-and-classes.html" />
+        <option value="$PROJECT_DIR$/metrics.html" />
       </list>
     </option>
   </component>
@@ -251,8 +262,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -453,12 +464,13 @@
       <workItem from="1491054278427" duration="2333000" />
       <workItem from="1491234909909" duration="9860000" />
       <workItem from="1491339272926" duration="744000" />
-      <workItem from="1491597065578" duration="1968000" />
+      <workItem from="1491597065578" duration="2397000" />
+      <workItem from="1491651268649" duration="4131000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="324878000" />
+    <option name="totallyTimeSpent" value="329438000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -504,13 +516,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JS/recursion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JS/ifelse.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -830,7 +835,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/attributes-and-custom-properties.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
+        <state relative-caret-position="2156">
           <caret line="98" column="40" lean-forward="false" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="40" />
           <folding />
         </state>
@@ -840,6 +845,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metrics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="737">
+          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<!--#1
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		#example {
+			width: 300px;
+			height: 200px;
+			overflow: auto;
+			border: 25px solid #E8C48F;
+			padding: 20px;
+		}
+
+		.key {
+			cursor: pointer;
+			text-decoration: underline;
+		}
+	</style>
+	-->
+
+	<!--#2
+	<style>
+		#field {
+			width: 200px;
+			border: 10px groove black;
+			background-color: #00FF00;
+			position: relative;
+		}
+
+		#ball {
+			position: absolute;
+		}
+	</style>-->
+</head>
+<body>
+
+<!--#1
+Свойство elem.scrollTop содержит размер прокрученной области при отсчете сверху. А как подсчитать размер прокрутки снизу?
+
+Напишите соответствующее выражение для произвольного элемента elem.
+
+Проверьте: если прокрутки нет вообще или элемент полностью прокручен – оно должно давать ноль.
+-->
+
+<!--<div id="example">
+	<h3>Introduction</h3>
+	<p>This Ecma Standard is based on several originating technologies, the most well known being JavaScript (Netscape) and JScript (Microsoft). The language was invented by Brendan Eich at Netscape and first appeared in that company's Navigator 2.0 browser.
+		It has appeared in all subsequent browsers from Netscape and in all browsers from Microsoft starting with Internet Explorer 3.0. The development of this Standard started in November 1996. The first edition of this Ecma Standard was adopted by the
+		Ecma General Assembly of June 1997.</p>
+
+	<p>That Ecma Standard was submitted to ISO/IEC JTC 1 for adoption under the fast-track procedure, and approved as international standard ISO/IEC 16262, in April 1998. The Ecma General Assembly of June 1998 approved the second edition of ECMA-262 to keep
+		it fully aligned with ISO/IEC 16262. Changes between the first and the second edition are editorial in nature.</p>
+
+	<p>The third edition of the Standard introduced powerful regular expressions, better string handling, new control statements, try/catch exception handling, tighter definition of errors, formatting for numeric output and minor changes in anticipation
+		of forthcoming internationalisation facilities and future language growth. The third edition of the ECMAScript standard was adopted by the Ecma General Assembly of December 1999 and published as ISO/IEC 16262:2002 in June 2002.</p>
+
+</div>
+
+<script>
+	var div = document.getElementById("example");
+	alert( div.scrollHeight - (div.clientHeight + div.scrollTop) )
+</script>-->
+
+<!--#2
+Поместите мяч в центр поля.
+Используйте JavaScript, чтобы поместить мяч в центр:
+Менять CSS нельзя, мяч должен переносить в центр ваш скрипт, через установку нужных стилей элемента.
+JavaScript-код должен работать при разных размерах мяча (10, 20, 30 пикселей) без изменений.
+JavaScript-код должен работать при различных размерах и местоположениях поля на странице без изменений.
+Также он не должен зависеть от ширины рамки поля border.-->
+
+
+<!--#
+<div id="field">
+	<img src="https://js.cx/clipart/ball.svg" id="ball"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+	. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+</div>
+
+<script>
+	var ball = document.getElementById("ball");
+	ball.style.top = "0";
+	ball.style.bottom = 0;
+	ball.style.margin = "auto";
+	ball.style.left = "0";
+	ball.style.right = "0";
+</script>
+-->
+
+
+</body>
+</html>

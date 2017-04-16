@@ -5,8 +5,11 @@
 	<title>Title</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<style>
-
+		.container {
+			width: 100%;
+		}
 		table {
+			width: 100%;
 			border: 3px solid black;
 
 		}
@@ -19,49 +22,69 @@
 
 <body>
 
-<table class="splittable-table" data-col-groups="6,2,2">
-	<tr>
-		<td>Test 1</td>
-		<td>Test 2</td>
-		<td>Test 3</td>
-		<td>Test 4</td>
-		<td>Test 5</td>
-		<td>Test 6</td>
-		<td>Test 7</td>
-		<td>Test 8</td>
-		<td>Test 9</td>
-		<td>Test 10</td>
-	</tr>
+<div class="container">
+	<table class="splittable-table" data-col-groups="3,2,5">
+		<tr>
+			<td>Test 1</td>
+			<td>Test 2</td>
+			<td>Test 3</td>
+			<td>Test 4</td>
+			<td>Test 5</td>
+			<td>Test 6</td>
+			<td>Test 7</td>
+			<td>Test 8</td>
+			<td>Test 9</td>
+			<td>Test 10</td>
+		</tr>
+		<tr>
+			<td>Test 11</td>
+			<td>Test 12</td>
+			<td>Test 13</td>
+			<td>Test 14</td>
+			<td>Test 15</td>
+			<td>Test 16</td>
+			<td>Test 17</td>
+			<td>Test 18</td>
+			<td>Test 19</td>
+			<td>Test 20</td>
+		</tr>
+		<tr>
+			<td>Test 21</td>
+			<td>Test 22</td>
+			<td>Test 23</td>
+			<td>Test 24</td>
+			<td>Test 25</td>
+			<td>Test 26</td>
 
-	<!--<tr>
-		<td>Test 7</td>
-		<td>Test 8</td>
-		<td>Test 9</td>
-		<td>Test 10</td>
-	</tr>-->
 
-
-
-
-</table>
+		</tr>
+	</table>
+</div>
 
 <script>
 	$(function () {
 		function getArrays(tableAttr, tds) {
-			var result = []; //[<tr>[tdtdtd]</tr>,<tr>[tdtd],[]]
-			var tr = "";
+			var result = [];
+			var newRow = "";
 			var counter = 0;
 			for (var i = 0; i < tableAttr.length; i++) {
 
 				for (var j = 0; j < tds.length; j++) {
-					if (tds[j].cellIndex < tableAttr[i]) {
-						tr += tds[counter].outerHTML;
-						counter++;
+					if (tds[counter]) {
+						if (tds[j].cellIndex < tableAttr[i]) {
+							newRow += tds[counter].outerHTML;
+							counter++;
+						} else {
+							result.push("<tr>" + newRow + "</tr>");
+							newRow = "";
+							break;
+						}
 					} else {
-						result.push("<tr>" + tr + "</tr>");
-						tr = "";
+						result.push("<tr>" + newRow + "</tr>");
+						newRow = "";
 						break;
 					}
+
 				}
 			}
 			return result;
@@ -74,17 +97,10 @@
 				var $tr = $(this);
 				var tds = $tr.find('td');
 				var arrays = getArrays(tableAttr, tds);
-
-
-				var newTrs = arrays.map(function (tds, i, arr) {
-					var newTr = $('<tr>');
-					tds.each(function () {
-						newTr.append(this);
-					});
-					return newTr;
-				})
-
-				//TODO заменить $tr на newTrs
+				$tr.remove();
+				for (var i = 0; i < arrays.length; i++) {
+					table.append(arrays[i]);
+				}
 			})
 
 		}

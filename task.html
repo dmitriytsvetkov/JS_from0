@@ -37,84 +37,70 @@
 			<td>Test 10</td>
 		</tr>
 		<tr>
-			<td>Test 11</td>
-			<td>Test 12</td>
-			<td>Test 13</td>
-			<td>Test 14</td>
-			<td>Test 15</td>
-			<td>Test 16</td>
-			<td>Test 17</td>
-			<td>Test 18</td>
-			<td>Test 19</td>
-			<td>Test 20</td>
+			<td>Test 1</td>
+			<td>Test 2</td>
+			<td>Test 3</td>
 		</tr>
-		<tr>
-			<td>Test 21</td>
-			<td>Test 22</td>
-			<td>Test 23</td>
-			<td>Test 24</td>
-			<td>Test 25</td>
-			<td>Test 26</td>
 
-
-		</tr>
 	</table>
 </div>
 
 <script>
 	$(function () {
-		function getArrays(tableAttr, tds) {
+		function getMaxOfArray(numArray) { // вычисляем максимальный tableAttr
+			return Math.max.apply(null, numArray);
+		}
+
+
+		function getArrays(tableAttr, tds) { // получаем массив массивов вида <tr><td>...</td></tr>
 			var result = [];
-			var newRow = "";
+			var newRow = [];
 			var counter = 0;
 			for (var i = 0; i < tableAttr.length; i++) {
-
 				for (var j = 0; j < tds.length; j++) {
 					if (tds[counter]) {
 						if (tds[j].cellIndex < tableAttr[i]) {
-							newRow += tds[counter].outerHTML;
+							newRow.push(tds[counter].outerHTML);
 							counter++;
 						} else {
-							result.push("<tr>" + newRow + "</tr>");
-							newRow = "";
+							newRow.unshift("<tr>");
+							newRow.push("</tr>");
+							result.push(newRow);
+							newRow = [];
 							break;
 						}
 					} else {
-						result.push("<tr>" + newRow + "</tr>");
-						newRow = "";
+						newRow.unshift("<tr>");
+						newRow.push("</tr>");
+						result.push(newRow);
+						newRow = [];
 						break;
 					}
-
 				}
 			}
 			return result;
 		}
 		var table = $(".splittable-table");
-		var tableAttr = table.data("col-groups").split(",");
+		var tableAttr = table.data("col-groups").split(",").map(Number);
 
 		if (tableAttr.length > 1) {
 			table.find('tr').each(function () {
 				var $tr = $(this);
 				var tds = $tr.find('td');
 				var arrays = getArrays(tableAttr, tds);
+				var tableAttrMax = getMaxOfArray(tableAttr);
+
+
 				$tr.remove();
 				for (var i = 0; i < arrays.length; i++) {
+					for (var j = 0; i < arrays[j].length; j++) {
+						
+					}
 					table.append(arrays[i]);
 				}
 			})
 
 		}
-
-
-
-		/*table.each(function () {
-			var _table = $(this);
-
-			$("td:last").attr( "colspan", 3 );
-		})*/
-
-
-
 	});
 </script>
 </body>

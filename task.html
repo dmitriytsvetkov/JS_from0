@@ -23,7 +23,7 @@
 <body>
 
 <div class="container">
-	<table class="splittable-table" data-col-groups="3,2,5">
+	<table class="splittable-table" data-col-groups="1,4,5">
 		<tr>
 			<td>Test 1</td>
 			<td>Test 2</td>
@@ -35,11 +35,6 @@
 			<td>Test 8</td>
 			<td>Test 9</td>
 			<td>Test 10</td>
-		</tr>
-		<tr>
-			<td>Test 1</td>
-			<td>Test 2</td>
-			<td>Test 3</td>
 		</tr>
 
 	</table>
@@ -90,18 +85,32 @@
 				var arrays = getArrays(tableAttr, tds);
 				var tableAttrMax = getMaxOfArray(tableAttr);
 
-
 				$tr.remove();
+
 				for (var i = 0; i < arrays.length; i++) {
-					for (var j = 0; i < arrays[j].length; j++) {
-						
-					}
+					arrays[i] = arrays[i].join(" ");
 					table.append(arrays[i]);
 				}
 			})
-
 		}
+
+
+
+
 	});
+</script>
+
+<script>
+	$(function () {
+		var table = $(".splittable-table");
+
+		table.find('tr').each(function () {
+			var $tr = $(this);
+			var tds = $tr.find('td');
+			return 0;
+		}
+		);
+	})
 </script>
 </body>
 </html>

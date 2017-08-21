@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Test work</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style>
+		.error {
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+
+<div class="container">
+			<form id="myForm" onsubmit="return validateForm()">
+				<div class="form-group">
+					<label for="fio">Введите имя</label>
+					<input type="text" class="form-control" name="fio" id="fio" placeholder="Иван Иванович Иванов">
+				</div>
+				<div class="form-group">
+					<label for="email">Введите email</label>
+					<input type="email" class="form-control" name="email" id="email" placeholder="test@yandex.ru" >
+				</div>
+				<div class="form-group">
+					<label for="phone">Введите телефон</label>
+					<input type="tel" class="form-control" name="phone" id="phone" placeholder="+7(999)999-99-99">
+				</div>
+				<div class="form-group">
+					<input type="submit" id="submitButton" class="btn btn-default">
+				</div>
+			</form>
+	<div class="row justify-content-center" id="resultContainer">
+			<h1>resultContainer</h1>
+	</div>
+
+</div>
+
+<script>
+	function validateForm() {
+		let x = document.forms["myForm"]["fio"].value;
+		x = x.split(' ');
+		if (x.length > 3) {
+
+			alert("Должно быть три слова");
+			return false;
+		}
+		let y = document.forms["myForm"]["email"].value;
+		if (!validateEmail(y)) {
+			alert("Почта может быть только в доменах ya.ru, yandex.ru, yandex.ua, yandex.by, yandex.kz, yandex.com");
+			return false;
+		}
+		let z = document.forms["myForm"]["phone"].value;
+		z = z.replace(/[^0-9]/g,'');
+		z = add(z);
+		if (z > 30) {
+			alert("Сумма всех цифр телефона не должна превышать 30");
+			return false
+		}
+
+	}
+	function validateEmail(email){
+		if ( /^\"?[\w-_\.]*\"?@yandex\.ru$/.test(email) ) {
+			return true;
+		}
+		if ( /^\"?[\w-_\.]*\"?@ya\.ru$/.test(email) ) {
+			return true;
+		}
+		if ( /^\"?[\w-_\.]*\"?@yandex\.ua$/.test(email) ) {
+			return true;
+		}
+		if ( /^\"?[\w-_\.]*\"?@yandex\.by$/.test(email) ) {
+			return true;
+		}
+		if ( /^\"?[\w-_\.]*\"?@yandex\.kz$/.test(email) ) {
+			return true;
+		}
+		if ( /^\"?[\w-_\.]*\"?@yandex\.com$/.test(email) ) {
+			return true;
+		}
+	}
+	function add(string) {
+		string = string.split('');                 //split into individual characters
+		let sum = 0;                               //have a storage ready
+		for (let i = 0; i < string.length; i++) {  //iterate through
+			sum += parseInt(string[i],10);         //convert from string to int
+		}
+		return sum;                                //return when done
+	}
+</script>
+</body>
+</html>
